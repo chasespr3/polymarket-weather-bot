@@ -1,0 +1,340 @@
+{
+  "signals": [
+    {
+      "market_id": "2073947",
+      "condition_id": "0x3b2f9f376061bb2ae8c976141d6262fdeb5b7487578208f86c884ad28af93478",
+      "market_question": "Will the lowest temperature in New York City be between 48-49°F on April 27?",
+      "outcome": "No",
+      "confidence": 90,
+      "market_odds": 0.0005,
+      "ev_percent": 179900.00000000003,
+      "top_traders": "[]",
+      "rationale": "Forecast low for Mon Apr 27 2026: 10.5°C / 50.9°F. P(Yes)=10% for condition 48–49°F.",
+      "risk": "Forecast uncertainty ±1.5°C — actual temp may land in a different bracket.",
+      "telegram_sent": 1,
+      "signal_time": 1777351478115,
+      "end_date": "2026-04-27T12:00:00Z",
+      "outcome_odds": 0.0005,
+      "resolved": 0,
+      "won": null,
+      "pnl": null
+    },
+    {
+      "market_id": "2073963",
+      "condition_id": "0xa8fa5d230609e5708034fd5a7d1af074cdc83164d88cf4b41ccf28351bf703a0",
+      "market_question": "Will the lowest temperature in Miami be between 70-71°F on April 27?",
+      "outcome": "No",
+      "confidence": 90,
+      "market_odds": 0.0005,
+      "ev_percent": 179900.00000000003,
+      "top_traders": "[]",
+      "rationale": "Forecast low for Mon Apr 27 2026: 22.8°C / 73.0°F. P(Yes)=10% for condition 70–71°F.",
+      "risk": "Forecast uncertainty ±1.5°C — actual temp may land in a different bracket.",
+      "telegram_sent": 1,
+      "signal_time": 1777351478414,
+      "end_date": "2026-04-27T12:00:00Z",
+      "outcome_odds": 0.0005,
+      "resolved": 0,
+      "won": null,
+      "pnl": null
+    },
+    {
+      "market_id": "2074022",
+      "condition_id": "0x14089fe5ff70882e6ebbedf78c9eb5c062ace07518eadb87e4c3360fbfc48a4f",
+      "market_question": "Will the lowest temperature in Hong Kong be 23°C on April 27?",
+      "outcome": "No",
+      "confidence": 100,
+      "market_odds": 0.0005,
+      "ev_percent": 199900,
+      "top_traders": "[]",
+      "rationale": "Forecast low for Mon Apr 27 2026: 27.9°C / 82.1°F. P(Yes)=0% for condition 22.5–23.5°C.",
+      "risk": "Forecast uncertainty ±1.5°C — actual temp may land in a different bracket.",
+      "telegram_sent": 1,
+      "signal_time": 1777351478715,
+      "end_date": "2026-04-27T12:00:00Z",
+      "outcome_odds": 0.0005,
+      "resolved": 0,
+      "won": null,
+      "pnl": null
+    },
+    {
+      "market_id": "2074288",
+      "condition_id": "0x67ec27844c82e60ffb59c6126a3b8e217f0f9b9bdb7124d9f99d1bdc243f0bfa",
+      "market_question": "Will the highest temperature in Sao Paulo be 29°C on April 27?",
+      "outcome": "No",
+      "confidence": 100,
+      "market_odds": 0.0005,
+      "ev_percent": 199900,
+      "top_traders": "[]",
+      "rationale": "Forecast high for Mon Apr 27 2026: 20.7°C / 69.3°F. P(Yes)=0% for condition 28.5–29.5°C.",
+      "risk": "Forecast uncertainty ±1.5°C — actual temp may land in a different bracket.",
+      "telegram_sent": 1,
+      "signal_time": 1777351479020,
+      "end_date": "2026-04-27T12:00:00Z",
+      "outcome_odds": 0.0005,
+      "resolved": 0,
+      "won": null,
+      "pnl": null
+    },
+    {
+      "market_id": "2074304",
+      "condition_id": "0xed88e2f7a787dee037401ace1f3d41a710966b632046b4af4791c4f546ffa289",
+      "market_question": "Will the highest temperature in Buenos Aires be 17°C on April 27?",
+      "outcome": "No",
+      "confidence": 100,
+      "market_odds": 0.0005,
+      "ev_percent": 199900,
+      "top_traders": "[]",
+      "rationale": "Forecast high for Mon Apr 27 2026: 10.5°C / 50.8°F. P(Yes)=0% for condition 16.5–17.5°C.",
+      "risk": "Forecast uncertainty ±1.5°C — actual temp may land in a different bracket.",
+      "telegram_sent": 1,
+      "signal_time": 1777351479324,
+      "end_date": "2026-04-27T12:00:00Z",
+      "outcome_odds": 0.0005,
+      "resolved": 0,
+      "won": null,
+      "pnl": null
+    },
+    {
+      "market_id": "2074325",
+      "condition_id": "0x2dce852219bb6fc9887765bb2b35897cfe18c3c0bd784f717cc9f25948efb718",
+      "market_question": "Will the highest temperature in Toronto be 18°C on April 27?",
+      "outcome": "No",
+      "confidence": 100,
+      "market_odds": 0.0005,
+      "ev_percent": 199900,
+      "top_traders": "[]",
+      "rationale": "Forecast high for Mon Apr 27 2026: 12.4°C / 54.2°F. P(Yes)=0% for condition 17.5–18.5°C.",
+      "risk": "Forecast uncertainty ±1.5°C — actual temp may land in a different bracket.",
+      "telegram_sent": 1,
+      "signal_time": 1777351479623,
+      "end_date": "2026-04-27T12:00:00Z",
+      "outcome_odds": 0.0005,
+      "resolved": 0,
+      "won": null,
+      "pnl": null
+    },
+    {
+      "market_id": "2074332",
+      "condition_id": "0x642f22647c1fe24d2c863f56c8a01e90f7bc8f297cc2fde56879b69584092d65",
+      "market_question": "Will the highest temperature in Seattle be between 56-57°F on April 27?",
+      "outcome": "No",
+      "confidence": 95,
+      "market_odds": 0.0005,
+      "ev_percent": 189900,
+      "top_traders": "[]",
+      "rationale": "Forecast high for Mon Apr 27 2026: 11.4°C / 52.6°F. P(Yes)=5% for condition 56–57°F.",
+      "risk": "Forecast uncertainty ±1.5°C — actual temp may land in a different bracket.",
+      "telegram_sent": 1,
+      "signal_time": 1777351479920,
+      "end_date": "2026-04-27T12:00:00Z",
+      "outcome_odds": 0.0005,
+      "resolved": 0,
+      "won": null,
+      "pnl": null
+    }
+  ],
+  "markets": {
+    "2073931": {
+      "question": "Will the lowest temperature in New York City be 37°F or below on April 27?",
+      "last_checked": 1777351475339,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2073933": {
+      "question": "Will the lowest temperature in New York City be between 38-39°F on April 27?",
+      "last_checked": 1777351475338,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2073936": {
+      "question": "Will the lowest temperature in New York City be between 40-41°F on April 27?",
+      "last_checked": 1777351475338,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2073939": {
+      "question": "Will the lowest temperature in New York City be between 42-43°F on April 27?",
+      "last_checked": 1777351475339,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2073942": {
+      "question": "Will the lowest temperature in New York City be between 44-45°F on April 27?",
+      "last_checked": 1777351475339,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2073945": {
+      "question": "Will the lowest temperature in New York City be between 46-47°F on April 27?",
+      "last_checked": 1777351475339,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2073947": {
+      "question": "Will the lowest temperature in New York City be between 48-49°F on April 27?",
+      "last_checked": 1777351475339,
+      "last_odds": [
+        0.9995,
+        0.0005
+      ]
+    },
+    "2073961": {
+      "question": "Will the lowest temperature in Miami be 67°F or below on April 27?",
+      "last_checked": 1777351475339,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2073962": {
+      "question": "Will the lowest temperature in Miami be between 68-69°F on April 27?",
+      "last_checked": 1777351475339,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2073963": {
+      "question": "Will the lowest temperature in Miami be between 70-71°F on April 27?",
+      "last_checked": 1777351475339,
+      "last_odds": [
+        0.9995,
+        0.0005
+      ]
+    },
+    "2074012": {
+      "question": "Will the lowest temperature in Hong Kong be 18°C on April 27?",
+      "last_checked": 1777351475339,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2074019": {
+      "question": "Will the lowest temperature in Hong Kong be 22°C on April 27?",
+      "last_checked": 1777351475339,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2074022": {
+      "question": "Will the lowest temperature in Hong Kong be 23°C on April 27?",
+      "last_checked": 1777351475339,
+      "last_odds": [
+        0.9995,
+        0.0005
+      ]
+    },
+    "2074288": {
+      "question": "Will the highest temperature in Sao Paulo be 29°C on April 27?",
+      "last_checked": 1777351475339,
+      "last_odds": [
+        0.9995,
+        0.0005
+      ]
+    },
+    "2074289": {
+      "question": "Will the highest temperature in Sao Paulo be 30°C on April 27?",
+      "last_checked": 1777351475339,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2074290": {
+      "question": "Will the highest temperature in Sao Paulo be 31°C on April 27?",
+      "last_checked": 1777351475340,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2074291": {
+      "question": "Will the highest temperature in Sao Paulo be 32°C on April 27?",
+      "last_checked": 1777351475340,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2074292": {
+      "question": "Will the highest temperature in Sao Paulo be 33°C on April 27?",
+      "last_checked": 1777351475340,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2074304": {
+      "question": "Will the highest temperature in Buenos Aires be 17°C on April 27?",
+      "last_checked": 1777351475340,
+      "last_odds": [
+        0.9995,
+        0.0005
+      ]
+    },
+    "2074305": {
+      "question": "Will the highest temperature in Buenos Aires be 18°C or higher on April 27?",
+      "last_checked": 1777351475340,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2074325": {
+      "question": "Will the highest temperature in Toronto be 18°C on April 27?",
+      "last_checked": 1777351475341,
+      "last_odds": [
+        0.9995,
+        0.0005
+      ]
+    },
+    "2074326": {
+      "question": "Will the highest temperature in Toronto be 19°C on April 27?",
+      "last_checked": 1777351475341,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2074327": {
+      "question": "Will the highest temperature in Toronto be 20°C or higher on April 27?",
+      "last_checked": 1777351475342,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    },
+    "2074332": {
+      "question": "Will the highest temperature in Seattle be between 56-57°F on April 27?",
+      "last_checked": 1777351475342,
+      "last_odds": [
+        0.9995,
+        0.0005
+      ]
+    },
+    "2074333": {
+      "question": "Will the highest temperature in Seattle be between 58-59°F on April 27?",
+      "last_checked": 1777351475342,
+      "last_odds": [
+        0.0005,
+        0.9995
+      ]
+    }
+  },
+  "stats": {}
+}

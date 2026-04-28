@@ -4,6 +4,7 @@ const polymarket = require('../services/polymarket');
 const { analyzeMarket, extractLocation } = require('../services/claude');
 const telegram = require('../services/telegram');
 const { evaluateSignal } = require('./signals');
+const { checkPendingSignals } = require('./pnl');
 const db = require('../storage/db');
 
 // Process a batch of markets in parallel (capped at 5 concurrent)
@@ -118,10 +119,17 @@ async function runScanCycle(stats) {
       rationale: signal.rationale,
       risk: signal.risk,
       telegramSent: sent,
+      endDate: signal.market.endDate || null,
+      outcomeOdds: signal.marketOdds,
     });
 
     if (sent) { stats.signalsSent++; alertsSentThisCycle++; }
   }
+
+  // 5. Settle any pending signals whose markets have now resolved
+  await checkPendingSignals().catch(err =>
+    logger.warn('P&L check error', { error: err.message })
+  );
 
   stats.cycles++;
   stats.lastCycle = new Date().toISOString();
