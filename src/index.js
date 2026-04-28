@@ -63,13 +63,24 @@ function fmtPnl(pnl) {
   return `<span class="${cls}">${sign}$${Math.abs(pnl).toFixed(2)}</span>`;
 }
 
+// Render odds with enough decimal places so sub-1% values never round to "0%"
+function fmtOdds(v) {
+  if (v == null) return '—';
+  const pct = v * 100;
+  if (pct === 0)  return '0%';
+  if (pct < 0.1)  return pct.toFixed(2) + '%';
+  if (pct < 1)    return pct.toFixed(2) + '%';
+  if (pct < 10)   return pct.toFixed(1) + '%';
+  return pct.toFixed(0) + '%';
+}
+
 function signalRows(signals) {
   if (signals.length === 0) {
     return `<tr><td colspan="8" style="text-align:center;color:var(--muted);padding:32px">No signals yet — bot is scanning markets</td></tr>`;
   }
   return signals.map(s => {
     const dt = new Date(s.signal_time).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
-    const odds = s.outcome_odds != null ? (s.outcome_odds * 100).toFixed(0) + '%' : '—';
+    const odds = fmtOdds(s.outcome_odds);
     const status = s.resolved ? (s.won ? 'Won' : 'Lost') : 'Pending';
     const statusCls = s.resolved ? (s.won ? 'badge-won' : 'badge-lost') : 'badge-pending';
     const confCls = s.confidence >= 90 ? 'pos' : s.confidence >= 80 ? 'warn' : 'muted';
