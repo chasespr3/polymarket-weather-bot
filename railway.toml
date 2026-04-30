@@ -8,3 +8,7 @@ restartPolicyMaxRetries = 10
 
 [[services]]
 name = "polymarket-weather-bot"
+
+[[volumes]]
+mountPath = "/data"
+name = "weather-bot-data"

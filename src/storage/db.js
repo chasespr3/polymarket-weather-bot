@@ -2,8 +2,12 @@ const path = require('path');
 const fs = require('fs');
 const logger = require('../utils/logger');
 
-const DB_PATH = path.join(process.cwd(), 'signals.db');
-const JSON_PATH = path.join(process.cwd(), 'signals.json');
+// Use Railway Volume mount at /data when available, otherwise fall back to cwd
+const DATA_DIR = fs.existsSync('/data') ? '/data' : process.cwd();
+try { fs.mkdirSync(DATA_DIR, { recursive: true }); } catch { /* already exists */ }
+
+const DB_PATH   = path.join(DATA_DIR, 'signals.db');
+const JSON_PATH = path.join(DATA_DIR, 'signals.json');
 
 let db = null;
 let useJson = false;

@@ -61,10 +61,17 @@ async function runScanCycle(stats) {
     return;
   }
 
-  // 2. Normalize and filter by liquidity/volume
+  // 2. Normalize and filter by liquidity/volume, skipping already-decided markets
   const allMarkets = rawMarkets
     .map(polymarket.normalizeMarket)
-    .filter(m => !m.resolved && m.liquidity >= config.MIN_LIQUIDITY_USD && m.volume24h >= config.MIN_VOLUME_USD);
+    .filter(m =>
+      !m.resolved &&
+      m.liquidity >= config.MIN_LIQUIDITY_USD &&
+      m.volume24h >= config.MIN_VOLUME_USD &&
+      // Skip markets where any outcome is already priced above 80% — those are
+      // effectively decided and the bot has no real edge to exploit.
+      m.outcomes.every(o => o.price <= 0.80)
+    );
 
   // Prioritize daily temperature markets first, shuffle the rest for variety
   const isTempMarket = m => /highest|lowest\s+(temperature|temp)/i.test(m.question);
